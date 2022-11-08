@@ -1,0 +1,185 @@
+body{
+    background-image:url('../foto/4562472.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    background-color: #333;
+}
+.nav li {
+    float: left;
+}
+.nav li a {
+    display: block;
+    font-size: 18px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 46px;
+    text-decoration: none;
+}
+.nav li a:hover {
+    background-color: #111;
+}
+h1{
+    margin-top: 10%;
+    text-align: center;
+    color: #f703c2;
+}
+h3{
+    font-size: 34px;
+    color: #c70063;
+    margin-top: 20%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#hero{
+    height: 85vh;
+}
+#bio{
+    height: 85vh;
+}
+#skill{
+    height: 85vh;
+}
+#project{
+    height: 85vh;
+}
+.gambar-satu{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}  
+.gambar-dua img{ 
+    display: block;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}    
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    font-weight: bold;
+    border-radius: 10px;
+    color:rgb(255, 0, 221);
+}
+.table-satu{
+    border: 2px solid rgb(250, 0, 167);
+}
+.table-dua{
+    border: 2px solid rgb(255, 0, 200);
+}
+.comment{
+    text-align: center; 
+ 
+}
+.form{
+    height: 15px;
+    width: 15%;
+    font-size: 16px;
+    border-radius: 24px;
+    padding: 5px 15px;
+    background: #fdf9ff;
+    color: #504e70;
+    border: 1px solid grey;
+    transition: all 0.2s ease;
+}
+.form:focus{
+    box-shadow: 0 0 40px rgba(48, 46, 77, 0.35);
+    outline: 0px;
+}
+.form-label{
+    float: left;
+}
+.message{
+    height: 100px;
+    width: 30%;
+    font-size: 16px;
+    border-radius: 24px;
+    padding: 5px 30px;
+    background: #fdf9ff;
+    color: #504e70;
+    border: 1px solid grey;
+    transition: all 0.2s ease;
+}
+.message:focus{
+    box-shadow: 0 0 40px rgba(48, 46, 77, 0.35);
+    outline: 0px;
+}
+.btn{
+    font-size: large;
+    text-align: center; 
+    cursor: pointer;
+    height: 50px;
+    width: 270px;
+    border: none;
+    margin-bottom: 15%;
+    color: white;
+    background-color: #333;
+    border-radius: 100px;
+    transition: all 0.5s ease;
+}
+.btn:hover{
+    transform: scale(1.05);
+    background-color: #110;
+    
+}
+
+/* hp */
+
+@media (min-width: 0px) and (max-width: 767px){
+    .gambar-satu > img{
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+    .gambar-dua > img{
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+    h1{
+        margin-top: 15%;
+    }
+    .form-control{
+        width: 150px;
+    }
+    .message{
+        width: 300px;
+    }
+    .btn{
+        width: 140px;
+    }
+}
+
+/* tablet */
+
+@media (min-width: 768px){
+    .gambar-satu > img{
+        max-width: 60%;
+    }
+    .gambar-dua > img{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* pc */
+
+@media (min-width: 992px){
+    .gambar-satu > img{
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+    .gambar-dua > img{
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+}
